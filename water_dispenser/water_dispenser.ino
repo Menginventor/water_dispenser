@@ -42,7 +42,7 @@ void loop() {
     case STANBY_STATE:
 
       if (blue_btn.released()) {
-        if (yellow_btn.read() == LOW) {
+        if (red_btn.read() == LOW) {
           crr_state = SETUP_DISPENS_STATE;
           Serial.println("SETUP_DISPENS_STATE");
           flow_counter = 0;
@@ -74,7 +74,7 @@ void loop() {
         close_valve();
         Serial.println("STANBY_STATE");
       }
-     gg
+     
       else {
         //Serial.println(flow_counter);
       }

@@ -6,7 +6,7 @@ class Button {
     byte btn_pin;
 
     unsigned lastDebounceTime;
-    unsigned long debounceDelay = 50;
+    unsigned long debounceDelay = 100;
     int buttonState;
     int lastButtonState;
 
